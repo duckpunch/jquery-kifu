@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.7.2.min.js"></script>
+<script src="jquery.ba-bbq.min.js"></script>
+<script src="kifu.js"></script>
+<script>
+$(function() {
+    var sgf_url = $.deparam.querystring().sgf;
+    if (sgf_url) {
+        $("#kifu-test").kifu(sgf_url);
+    }
+});
+</script>
+</head>
+<body>
+<canvas id="kifu-test" width="700" height="700"></canvas>
+</body>
+</html>
+
